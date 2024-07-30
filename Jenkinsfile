@@ -21,7 +21,7 @@ pipeline{
                 subject: "Build Successful: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: "Good news! The build was successful.\n\nCheck it out here: ${env.BUILD_URL}",
                 recipientProviders: [[$class: 'CulpritsRecipientProvider'], [$class: 'RequesterRecipientProvider']],
-                to: 'recipient@example.com' // Replace with your recipient email
+                to: 'ashwamedh.datta@ltts.com' // Replace with your recipient email
             )
         }
         failure {
